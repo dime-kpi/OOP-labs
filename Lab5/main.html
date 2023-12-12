@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ТР-25 Карпенко Дмитро</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+    <h1>Тест<br> "Адаптивний веб-дизайн. Flexbox"</h1>
+    <center>
+        <form id="quizForm">
+            <h2>Форма реєстрації</h2>
+            <p>Ім'я:<br></p>
+            <input type="text" name="firstname">
+            <br>
+            <p>Прізвище:<br></p>
+            <input type="text" name="lastname">
+            <p>Група:<br></p>
+            <input type="text" name="group">
+        </form>
+    </center>
+    <form>
+        <h2>Запитання</h2>
+        <h3>Початковий рівень</h3>
+        <!-- Запитання з однією відповіддю(radio) -->
+        <div class="shuffle-container">
+            <div class="shuffle-item">
+                <p class="p1">Що таке адаптивний веб-дизайн?</p>
+                <label><input type="radio" name="q1" value="a"> Дизайн, який адаптується до розмірів екрану користувача</label><br>
+                <label><input type="radio" name="q1" value="b"> Дизайн, який використовує тільки темні кольори</label><br>
+                <label><input type="radio" name="q1" value="c"> Дизайн, який пристосований до швидкості Інтернет-з'єднання користувача</label><br>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Який тег HTML використовується для визначення мета-тега адаптивного веб-дизайну?</p>
+                <label><input type="radio" name="q2" value="a"> meta charset="utf-8"</label><br>
+                <label><input type="radio" name="q2" value="b"> meta name="viewport" content="width=device-width, initial-scale=1"</label><br>
+                <label><input type="radio" name="q2" value="c"> meta http-equiv="refresh" content="30"</label><br>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Що таке Flexbox?</p>
+                <label><input type="radio" name="q3" value="a"> Метод створення веб-сайту за допомогою Flash</label><br>
+                <label><input type="radio" name="q3" value="b"> CSS-модель для роботи з контейнерами та їхніми дочірніми елементами</label><br>
+                <label><input type="radio" name="q3" value="c"> JavaScript-фреймворк для створення інтерактивних елементів інтерфейсу;</label><br>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Які основні властивості Flexbox визначають напрямок розташування елементів?</p>
+                <label><input type="radio" name="q4" value="a"> justify-content та align-items</label><br>
+                <label><input type="radio" name="q4" value="b"> flex-direction та flex-wrap</label><br>
+                <label><input type="radio" name="q4" value="c"> order та flex-grow</label><br>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як можна визначити, щоб елементи Flexbox займали доступний простір у контейнері?</p>
+                <label><input type="radio" name="q5" value="a"> flex-grow: 1;</label><br>
+                <label><input type="radio" name="q5" value="b"> flex-shrink: 0;</label><br>
+                <label><input type="radio" name="q5" value="c"> flex-basis: auto;</label><br>
+            </div>
+        </div>
+
+        <!-- Запитання з декількома вірними відповідями (checkbox) -->
+        <div class="shuffle-container">
+            <div class="shuffle-item">
+                <p class="p1">Що робить властивість align-items: center; у Flexbox?</p>
+                <label><input type="checkbox" name="q6[]" value="a"> Вирівнює елементи по центру по горизонталі</label><br>
+                <label><input type="checkbox" name="q6[]" value="b"> Вирівнює елементи по центру по вертикалі</label><br>
+                <label><input type="checkbox" name="q6[]" value="c"> Змінює порядок елементів у Flexbox</label><br>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Що таке "резиновий" дизайн?</p>
+                <label><input type="checkbox" name="q7[]" value="a"> Дизайн, який можна розтягнути на весь екран</label><br>
+                <label><input type="checkbox" name="q7[]" value="b"> Дизайн, який використовує тільки плавні переходи</label><br>
+                <label><input type="checkbox" name="q7[]" value="c"> Дизайн, який підлаштовується під будь-який розмір екрану</label><br>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Які є основні переваги використання Flexbox?</p>
+                <label><input type="checkbox" name="q8[]" value="a"> Проста модель, легко вирівнювати елементи</label><br>
+                <label><input type="checkbox" name="q8[]" value="b"> Можливість створення адаптивного веб-дизайну</label><br>
+                <label><input type="checkbox" name="q8[]" value="c"> Обидві відповіді вірні</label><br>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Що таке "гнучка" (flexible) ширина елемента в Flexbox?</p>
+                <label><input type="checkbox" name="q9[]" value="a"> Ширина, яка не може змінюватися</label><br>
+                <label><input type="checkbox" name="q9[]" value="b"> Ширина, яка може змінюватися в залежності від вмісту</label><br>
+                <label><input type="checkbox" name="q9[]" value="c"> Ширина, яка вказується в пікселях</label><br>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Яку властивість Flexbox використовують для зміни порядку елементів без зміни їхньої HTML-структури?</p>
+                <label><input type="checkbox" name="q10[]" value="a"> flex-direction</label><br>
+                <label><input type="checkbox" name="q10[]" value="b"> flex-wrap</label><br>
+                <label><input type="checkbox" name="q10[]" value="c"> order</label><br>
+            </div>
+        </div>
+    </form>
+
+    <form>
+        <h3>Середній рівень</h3>
+        <!-- Запитання з вибором відповіді з випадаючого списку -->
+        <div class="shuffle-container">
+            <div class="shuffle-item">
+                <p class="p1">Яка властивість Flexbox визначає, чи мають елементи однаковий розмір у контейнері?</p>
+                <select name="q11">
+                    <option value="a"> flex-wrap</option>
+                    <option value="b"> flex-basis</option>
+                    <option value="c"> align-items</option>
+                </select>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як вирівняти елементи по горизонталі в Flexbox?</p>
+                <select name="q12">
+                    <option value="a"> align-items: center;</option>
+                    <option value="b"> justify-content: center;</option>
+                    <option value="c"> flex-direction: row;</option>
+                </select>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Яка властивість Flexbox дозволяє задати мінімальний розмір елемента?</p>
+                <select name="q13">
+                    <option value="a"> min-width</option>
+                    <option value="b"> flex-basis</option>
+                    <option value="c"> min-height</option>
+                </select>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Яка властивість Flexbox дозволяє елементам розтягуватися, щоб заповнити доступний простір?</p>
+                <select name="q14">
+                    <option value="a"> flex-grow</option>
+                    <option value="b"> flex-shrink</option>
+                    <option value="c"> justify-content</option>
+                </select>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як визначити, щоб елемент Flexbox не змінював свого розміру в залежності від вмісту?</p>
+                <select name="q15">
+                    <option value="a"> flex-grow: 0;</option>
+                    <option value="b"> flex-shrink: 1;</option>
+                    <option value="c"> flex-basis: auto;</option>
+                </select>
+            </div>
+        </div>
+        <!--Наш варіант-->
+        <div class="shuffle-container">
+            <div class="shuffle-item">
+                <p class="p1">Як визначити, щоб елемент Flexbox займав максимально можливий простір у контейнері?</p>
+                <textarea id="q16" rows="4" cols="50"></textarea>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як визначити, щоб елемент Flexbox змінював свій розмір відповідно до вмісту, але не розтягувався за межі контейнера?</p>
+                <textarea id="q17" rows="4" cols="50"></textarea>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як виправити проблему, коли елементи Flexbox виходять за межі контейнера при маленьких розмірах екрану?</p>
+                <textarea id="q18" rows="4" cols="50"></textarea>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Яка властивість Flexbox використовується для вирівнювання елементів по вертикалі?</p>
+                <textarea id="q19" rows="4" cols="50"></textarea>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як визначити порядок елементів Flexbox так, щоб другий елемент з'явився перед першим?</p>
+                <textarea id="q20" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+    </form>
+    <form>
+        <h3>Складний рівень</h3>
+        <div class="shuffle-container">
+            <div class="shuffle-item">
+                <p class="p1">Як визначити, щоб елемент Flexbox мав фіксований розмір, ігноруючи вміст всередині?</p>
+                <textarea id="q21" rows="4" cols="50"></textarea>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як вирівняти елементи Flexbox по центру по горизонталі?</p>
+                <textarea id="q22" rows="4" cols="50"></textarea>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як визначити, щоб елемент Flexbox не змінював свого розміру в залежності від вмісту?</p>
+                <textarea id="q23" rows="4" cols="50"></textarea>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Як вирівняти елементи Flexbox по центру по вертикалі?</p>
+                <textarea id="q24" rows="4" cols="50"></textarea>
+            </div>
+            <div class="shuffle-item">
+                <p class="p1">Яка властивість Flexbox дозволяє визначити розмір елемента, що враховує контент та визначений розмір?</p>
+                <textarea id="q25" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <center>
+        <form>
+            <button onclick="check()">Здати тест</button>
+        </form>
+    </center>
+</footer>
+
+</html>
